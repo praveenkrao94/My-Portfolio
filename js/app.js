@@ -110,63 +110,28 @@ function showDiv(divNumber) {
 
 
 
-///////////////////////////////////////////  Form validation ////////////////////////////////////////////////////////////
-
-const form = document.getElementById('form');
-const username = document.getElementById('username');
-const email = document.getElementById('email');
-const password = document.getElementById('password');
-const password2 = document.getElementById('password2');
-
-form.addEventListener('submit', (e) => {
-    e.preventDefault()
-
-    formcallback()
-})
-
-const setError = (element, message) => {
-    const inp = element.parentElement
-
-    inp.querySelector('.error').innerText = message
-    inp.classList.add('error')
-    inp.classList.remove('success')
-}
+///////////////////////////////////////////  email ////////////////////////////////////////////////////////////
 
 
-const setSuccess = (element) => {
-    const inp = element.parentElement
-    inp.querySelector('.error').innerText = ''
-    inp.classList.add('success')
-    inp.classList.remove('error')
+
+function sendEmail() {
+    Email.send({
+        secureToken: "2d2056e3-bf82-419e-9168-1e728b2e56e3",
+
+        To: 'praveenkr0812@outlook.com',
+        From: document.getElementById("email").value,
+        Subject: "New Contact Form",
+        Body: "Name:" + document.getElementById("name").value
+            + "<br> Email:" + document.getElementById("email").value
+            + "<br> Phone Number:" + document.getElementById("contact").value
+            + "<br> Message:" + document.getElementById("message").value
+    }).then(
+        message => alert("Message Sent Successfully But Please Fell Free to call +91 8660435935")
+    );
 }
 
 
 
-
-
-const isValidEmail = email => {
-    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1, 3}\.[0-9]{1, 3}\.[0-9]{1, 3}\.[0-9]{1, 3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
-}
-
-
-const formcallback = () => {
-
-    const inputs = [
-        { element: username, validation: val => val.trim() !== '', message: "please enter valid" },
-        { element: email, validation: val => val.trim() !== '' && isValidEmail(val), message: "please enter valid email addess" }
-
-    ]
-
-    inputs.forEach((inp) => {
-        if (!inp.validation(inp.element.value)) {
-            setError(inp.element, inp.message)
-        } else {
-            setSuccess(inp.element)
-        }
-    })
-
-}
 
 // ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

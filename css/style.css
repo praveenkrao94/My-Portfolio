@@ -163,6 +163,7 @@ body {
     left: 100px !important;
   }
 }
+
 /* --------------------------------------------------------SKILL BAR ----------------------------------------------------------- */
 
 .skills h1 {
@@ -530,51 +531,16 @@ body {
     right: 21px;
   }
 }
-/* -----------------------------------------------------------testimonials------------------------------------------------------ */
-
-.testi img {
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-}
-
-.testi p {
-  margin-top: 20px;
-  margin-bottom: 60px;
-}
-
-.testi a {
-  text-decoration: none;
-}
-
-.testi {
-  position: relative;
-  overflow: hidden;
-}
-
-.testi .text-content {
-  position: absolute;
-  bottom: 12px;
-  transition: all 0.8s ease;
-  opacity: 0;
-}
-
-.testi:hover .text-content {
-  bottom: 0;
-  opacity: 1;
-  margin-bottom: 15px;
-}
-
-/* - Team---////////// */
+/* -----------------------------------------------------------Connect------------------------------------------------------ */
 
 .team-content img {
   width: 300px;
-  height: 300px;
+
   padding: 0;
 }
 
 .icons {
-  font-size: 30px;
+  font-size: 100px;
   padding-left: 3px;
   color: #121212;
 }
@@ -756,8 +722,8 @@ footer ul li a {
 
 .icons-scroll i {
   background-color: white;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -779,11 +745,86 @@ footer ul li a {
 
 .scroll {
   position: relative;
-  top: -70px;
-  right: -1420px;
+  top: -180px;
+  right: -1440px;
 }
 
-/* media */
+/* ----------- for whatsapp -------------- */
+.scroll-w {
+  position: fixed;
+  top: 90%; /* Adjust the vertical position as needed */
+  right: 20px; /* Adjust the horizontal position as needed */
+  transform: translateY(-50%);
+  z-index: 999; /* Ensure it is above other elements */
+}
+
+.scroll-w a {
+  text-decoration: none;
+}
+
+.icons-scroll-w i {
+  background-color: rgb(0, 0, 0);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  border-radius: 100%;
+}
+
+.icons-scroll-w i:hover {
+  background-color: #00e778;
+  color: white;
+}
+
+@media screen and (max-width: 991px) {
+  .scroll-w {
+    top: 75%; /* Adjust the vertical position as needed */
+  }
+}
+
+/* --------------------- for git ----------------------------- */
+
+.scroll-g {
+  position: fixed;
+  top: 80%; /* Adjust the vertical position as needed */
+  right: 20px; /* Adjust the horizontal position as needed */
+  transform: translateY(-50%);
+  z-index: 999; /* Ensure it is above other elements */
+}
+
+.scroll-g a {
+  text-decoration: none;
+}
+
+.icons-scroll-g i {
+  background-color: rgb(0, 0, 0);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  border-radius: 100%;
+}
+
+.icons-scroll-g i:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 991px) {
+  .scroll-g {
+    top: 65%; /* Adjust the vertical position as needed */
+  }
+}
+
+/* --------------------------------------------------------------media for scroll ---------------------------------------------- */
 
 /* Hide the scroll button on mobile or smaller screens */
 @media (max-width: 767.98px) {
@@ -813,3 +854,19 @@ footer ul li a {
     display: none;
   }
 }
+
+/* -------------------------------------------margin for form top --------------------------------------------------- */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .custom-mt-md {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .custom-mt-md {
+    margin-top: 4rem;
+  }
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
