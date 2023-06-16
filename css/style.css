@@ -142,11 +142,11 @@ body {
 
 #cimage img {
   position: relative !important;
-  width: 220px !important;
+  width: 120px !important;
   height: auto !important;
   object-fit: cover;
   object-position: center;
-  left: 120px !important;
+  left: 160px !important;
 }
 
 @media (max-width: 768px) {
@@ -176,7 +176,7 @@ body {
   font-size: 14px;
 }
 .skills {
-  width: 500px;
+  width: 400px;
   margin: 60px auto;
   color: #fff;
   padding: 20px;
@@ -209,7 +209,7 @@ body {
   float: left;
   background: linear-gradient(
     135deg,
-    rgb(14, 205, 23) 0%,
+    rgb(53, 148, 226) 0%,
     rgb(53, 148, 226) 100%
   );
 }
