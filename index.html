@@ -86,6 +86,7 @@
     <!-- About me -->
 
     <section id="about" class="py-5 bg-2">
+
         <div class="container">
             <div class="row align-items-center mb-4 mt-4">
                 <div class="col-md-8 serviceC">
@@ -102,7 +103,10 @@
             </div>
 
             <div class="row ">
-                <div class="col-md-4 skill" onclick="toggleVisibility('skill')">
+
+                <!-- -----skill Section ---- -->
+
+                <div class="col-md-4 skill">
                     <div class="service p-4 border-custom aboutmeimg">
                         <img src="images/mern-img.png" alt="">
                         <h4 class="h5">Techincal Skills</h4>
@@ -112,7 +116,7 @@
 
                         <!-- modal box -->
 
-                        <!-- Button trigger modal -->
+                        <!-- Button trigger modal start -->
                         <div class="container">
                             <!-- Button to trigger the modal -->
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
@@ -247,16 +251,141 @@
 
                     </div>
                 </div>
-                <div class="col-md-4 experience" onclick="toggleVisibility('experience')">
-                    <div class="service p-4 border-custom">
-                        <div class="icon"><i class="lab la-react"></i></div>
-                        <h4 class="h5">Service Heading</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, quae? Aspernatur
-                            temporibus maiores tempora?</p>
-                        <a href="#">Read more</a>
+
+                <!-- --------- experience --------- -->
+
+
+                <div class="col-md-4 experience">
+                    <div class="service p-4 border-custom experienceImg">
+                        <img src="images/icon logo/workexp-transformed.png" alt="">
+                        <div class="icon"></div>
+                        <h4 class="h5">Professional Experience</h4>
+                        <p>As a MERN stack developer, I actively contributed to the BedPlus project for a Canadian
+                            client. Additionally, I played a crucial role as the primary point of contact for the
+                            client, ensuring effective communication and delivering high-quality solutions.</p>
+
+
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            Click Here
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Work Experience</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="expModalImg">
+                                                        <img src="images/icon logo/mind.png" alt=""><br><br>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+
+                                                    <!-- --- caroulse starts ---- -->
+
+                                                    <div id="carouselExampleControls" class="carousel slide">
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active" id="carouselbox1">
+                                                                <h5>Reported From: <br><br>
+                                                                    <h6
+                                                                        style="display: inline; border: 1px solid var(--bs-blue); color: var(--bs-blue); padding: 4px 4px;position: relative; left: 17px;">
+                                                                        November 2022 - March 2023</h6>
+                                                                    <br><br>
+                                                                    <h5>as Software Developer
+                                                                        Engineer.<br><br>
+                                                                        Total Experience of 5 Months</h5>
+                                                                </h5>
+                                                            </div>
+                                                            <div class="carousel-item" id="carouselbox2">
+
+                                                                <h5>Project at Mindnerves Tech Service</h5>
+                                                                <br>
+                                                                <p> <strong style="color:var(--bs-blue);">Bed
+                                                                        plus: </strong>Hotel Management (Canada)
+                                                                    – A complete Mern Stack Owner Management Website for
+                                                                    property
+                                                                    owners.</p>
+                                                                <h6>Technologies Used:</h6>
+                                                                <span>HTML, CSS, JavaScript, Bootstrap, React 18,
+                                                                    Context Api, NodeJS,ExpressJs,MongoDB</span>
+                                                                <br><br>
+                                                                <h6>Team Size:</h6>
+                                                                <span>6</span>
+                                                                <br><br>
+                                                                <h6>Role and Responsibilities:</h6>
+                                                                <br>
+                                                                <p style="font-size: 14px;">Develop pages using HTML,
+                                                                    CSS3 and ES6, JavaScript,
+                                                                    React</p>
+                                                                <p style="font-size: 14px;">Also was creating Api and
+                                                                    update Api at the backend</p>
+                                                                <p style="font-size: 14px;">Worked on Payment Gateway
+                                                                    like “Stripe Integration</p>
+                                                                <p style="font-size: 14px;">Worked on WordPress for the
+                                                                    Marketing page</p>
+                                                                <p style="font-size: 14px;">Entire Project was made sure
+                                                                    it is Completely Mobilized and responsive</p>
+                                                                <p style="font-size: 14px;">Integrated “Zendesk” a Chat
+                                                                    support to the Application.</p>
+                                                                <p style="font-size: 14px;">Integrated “Zendesk” a Chat
+                                                                    support to the Application.</p>
+                                                                <p style="font-size: 14px;">Resolving bugs efficiently
+                                                                    on time.
+                                                                </p>
+
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button"
+                                                            data-bs-target="#carouselExampleControls"
+                                                            data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon"
+                                                                aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Previous</span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button"
+                                                            data-bs-target="#carouselExampleControls"
+                                                            data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon"
+                                                                aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Next</span>
+                                                        </button>
+                                                    </div>
+
+                                                    <!-- --- caroulse ends ---- -->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 education" onclick="toggleVisibility('education')">
+
+
+                <!-- -------- education --------- -->
+
+                <div class="col-md-4 education">
                     <div class="service p-4 border-custom">
                         <div class="icon"><i class="lab la-amazon"></i></div>
                         <h4 class="h5">Service Heading</h4>
