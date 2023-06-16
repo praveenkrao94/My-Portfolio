@@ -488,6 +488,7 @@ body {
   position: absolute;
   bottom: 0;
   transition: all 1s ease;
+
   opacity: 0;
   padding: 32px;
   left: 0;
@@ -507,7 +508,29 @@ body {
   text-align: center;
 }
 
-/* testimonials */
+.swiper-slide .border-custom {
+  width: 400px;
+  padding: 30px 30px;
+}
+
+.webslide {
+  margin: auto;
+}
+
+@media (max-width: 767px) {
+  .webslide {
+    position: relative;
+    right: 21px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .webslide {
+    position: relative;
+    right: 21px;
+  }
+}
+/* -----------------------------------------------------------testimonials------------------------------------------------------ */
 
 .testi img {
   width: 100px;
