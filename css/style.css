@@ -782,7 +782,7 @@ footer ul li a {
 
 @media screen and (max-width: 991px) {
   .scroll-w {
-    top: 75%; /* Adjust the vertical position as needed */
+    top: 77%; /* Adjust the vertical position as needed */
   }
 }
 
@@ -820,7 +820,7 @@ footer ul li a {
 
 @media screen and (max-width: 991px) {
   .scroll-g {
-    top: 65%; /* Adjust the vertical position as needed */
+    top: 67%; /* Adjust the vertical position as needed */
   }
 }
 
@@ -900,6 +900,6 @@ footer ul li a {
 
 @media screen and (max-width: 991px) {
   .scroll-g {
-    top: 55%; /* Adjust the vertical position as needed */
+    top: 63%; /* Adjust the vertical position as needed */
   }
 }
