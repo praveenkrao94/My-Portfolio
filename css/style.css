@@ -799,7 +799,7 @@ footer ul li a {
 
 @media screen and (max-width: 991px) {
   .scroll-w {
-    top: 55%; /* Adjust the vertical position as needed */
+    top: 50%; /* Adjust the vertical position as needed */
   }
 }
 
