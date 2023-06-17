@@ -17,8 +17,6 @@ body {
   animation: blink-caret 0.75s infinite;
 }
 
-
-
 @keyframes blink-caret {
   0%,
   100% {
@@ -801,7 +799,7 @@ footer ul li a {
 
 @media screen and (max-width: 991px) {
   .scroll-w {
-    top: 77%; /* Adjust the vertical position as needed */
+    top: 70%; /* Adjust the vertical position as needed */
   }
 }
 
@@ -839,7 +837,7 @@ footer ul li a {
 
 @media screen and (max-width: 991px) {
   .scroll-g {
-    top: 67%; /* Adjust the vertical position as needed */
+    top: 80%; /* Adjust the vertical position as needed */
   }
 }
 
@@ -919,6 +917,6 @@ footer ul li a {
 
 @media screen and (max-width: 991px) {
   .scroll-g {
-    top: 63%; /* Adjust the vertical position as needed */
+    top: 60%; /* Adjust the vertical position as needed */
   }
 }
