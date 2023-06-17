@@ -1,18 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Manrope:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@300&family=Raleway:wght@400;500;600;700;800&family=Roboto:wght@100;300;400;500;700&display=swap");
+
+body {
+  font-family: "Railway", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+
+.auto-type::after {
+  content: "|";
+  animation: blink-caret 0.75s infinite;
+}
+
+
+
+@keyframes blink-caret {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 li {
   text-decoration: none;
   list-style: none;
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Manrope:wght@400;500;600&family=Poppins:wght@300&display=swap");
-
-body {
-  font-family: "Manrope", sans-serif;
 }
 
 /* -------------------------------------------------------------------Navbar ------------------------------------------------------ */

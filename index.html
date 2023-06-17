@@ -31,10 +31,6 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
 
-
-
-
-
                     <li class="nav-item">
                         <a class="nav-link" href="#project">Projects</a>
                     </li>
@@ -63,7 +59,8 @@
                 <div class="col-lg-7 px-lg-5 ">
                     <div class="content">
                         <img src="images/mern-img.png" alt="">
-                        <h1 class="h3" style="overflow: hidden;">Hi, i'm Praveen Rao <br>From Bengaluru</h1>
+                        <h1 class="h3" style="overflow: hidden;">Hi, i'm <span class="auto-type"></span> <br>From
+                            Bengaluru</h1>
                         <p class="mt-3 mb-4"> Creating Dynamic and Scalable Web
                             Applications with Full-Stack Expertise</p>
                         <div class="hero-buttons">
@@ -76,6 +73,8 @@
                 </div>
             </div>
         </div>
+
+
     </section>
 
 
@@ -763,17 +762,7 @@
     </footer>
 
 
-    <!-- - Scroll to top -->
-    <!-- 
-    <div class="music-container">
-
-        <div class="music-box">
-            id="play-icon"></i>
-        </div>
-
-    </div>
-
-    <i class="las la-pause-circle"></i> -->
+    <!-- -------------------------------------------------------Scroll -------------------------------------------------- -->
 
 
 
@@ -801,33 +790,8 @@
     </audio>
 
     <script>
-        let song = document.getElementById("song");
-        let ctrlIcon = document.getElementById("ctrlicon");
-        let isPlaying = false;
 
-        function playpause() {
-            if (isPlaying) {
-                song.pause();
-                ctrlIcon.classList.remove("la-pause-circle");
-                ctrlIcon.classList.add("la-play-circle");
-            } else {
-                song.play();
-                ctrlIcon.classList.remove("la-play-circle");
-                ctrlIcon.classList.add("la-pause-circle");
-            }
-            isPlaying = !isPlaying;
-        }
 
-        // Start playing the audio when the page is loaded
-        window.addEventListener('load', () => {
-            song.play().then(() => {
-                ctrlIcon.classList.remove("la-play-circle");
-                ctrlIcon.classList.add("la-pause-circle");
-                isPlaying = true;
-            }).catch((error) => {
-                console.log('Autoplay was prevented:', error);
-            });
-        });
     </script>
 
     <!-- --------------------------------------------------------------------------------------------------------------------------------- -->
@@ -842,8 +806,12 @@
 
 
 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/sendEmail.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/typed.js"></script>
     <script src="js/app.js"></script>
 
     <script src="js/bootstrap.bundle.min.js"></script>
