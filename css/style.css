@@ -96,26 +96,6 @@ li {
 
 /* ------------------------------------------------------hero page------------------------------------------------------------- */
 
-.gifbg {
-  display: none; /* Hide the element by default */
-}
-
-/* Media query for large screens */
-@media (min-width: 1200px) {
-  .gifbg {
-    display: block; /* Show the element on large screens */
-    position: absolute;
-    right: 0;
-  }
-
-  .gifbg img {
-    position: relative;
-    bottom: 100px;
-    width: 400px;
-    left: 80px;
-  }
-}
-
 /* --------------------------------------------------------------------------------------------------------------------------------- */
 .heroback {
   background: var(--bs-blue);
