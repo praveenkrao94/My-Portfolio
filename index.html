@@ -688,6 +688,12 @@
 
     </section>
 
+
+
+
+
+
+
     <!-- footer 1 -->
 
 
@@ -758,6 +764,19 @@
 
 
     <!-- - Scroll to top -->
+    <!-- 
+    <div class="music-container">
+
+        <div class="music-box">
+            id="play-icon"></i>
+        </div>
+
+    </div>
+
+    <i class="las la-pause-circle"></i> -->
+
+
+
     <div class="scroll">
         <a href="#" class="icons-scroll"> <i class="las la-angle-double-up"></i> </a>
     </div>
@@ -769,9 +788,56 @@
         <a href="https://github.com/praveenkrao94?tab=repositories" class="icons-scroll-g" target="blank"> <i
                 class="lab la-github"></i> </a>
     </div>
-    <!-- <div class="Whatsapp">
-        <a href="#" class="what-scroll"> <img src="images/icon logo/WhatsApp_Logo.svg (1).png" alt=""> </a>
-    </div> -->
+
+    <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <div class="scroll-music">
+        <div class="icons-scroll-music" onclick="playpause()"> <i class="las la-play-circle " id="ctrlicon"></i> </div>
+    </div>
+
+    <audio id="song" loop>
+        <source src="images/Suits Theme.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        let song = document.getElementById("song");
+        let ctrlIcon = document.getElementById("ctrlicon");
+        let isPlaying = false;
+
+        function playpause() {
+            if (isPlaying) {
+                song.pause();
+                ctrlIcon.classList.remove("la-pause-circle");
+                ctrlIcon.classList.add("la-play-circle");
+            } else {
+                song.play();
+                ctrlIcon.classList.remove("la-play-circle");
+                ctrlIcon.classList.add("la-pause-circle");
+            }
+            isPlaying = !isPlaying;
+        }
+
+        // Start playing the audio when the page is loaded
+        window.addEventListener('load', () => {
+            song.play().then(() => {
+                ctrlIcon.classList.remove("la-play-circle");
+                ctrlIcon.classList.add("la-pause-circle");
+                isPlaying = true;
+            }).catch((error) => {
+                console.log('Autoplay was prevented:', error);
+            });
+        });
+    </script>
+
+    <!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
 
 
 

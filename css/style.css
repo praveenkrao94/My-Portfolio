@@ -870,3 +870,36 @@ footer ul li a {
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------- */
+
+.scroll-music {
+  position: fixed;
+  top: 70%; /* Adjust the vertical position as needed */
+  right: 20px; /* Adjust the horizontal position as needed */
+  transform: translateY(-50%);
+  z-index: 999; /* Ensure it is above other elements */
+}
+
+.icons-scroll-music i {
+  background-color: rgb(0, 0, 0);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  border-radius: 100%;
+  color: var(--bs-blue);
+}
+
+.icons-scroll-music i:hover {
+  background-color: #3e3939;
+  color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 991px) {
+  .scroll-g {
+    top: 55%; /* Adjust the vertical position as needed */
+  }
+}
