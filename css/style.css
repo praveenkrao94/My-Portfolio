@@ -4,6 +4,31 @@ body {
   font-family: "Railway", sans-serif;
 }
 
+/* -----------------------------------------------------------------Pre loader ----------------------------------------------- */
+
+#preloader {
+  background: #000 url("../images/loader.gif") no-repeat center center;
+  background-size: 30%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+@media (max-width: 768px) {
+  /* For smaller devices */
+  #preloader {
+    background-size: 80%;
+  }
+}
+
+@media (max-width: 992px) {
+  /* For medium devices */
+  #preloader {
+    background-size: 80%;
+  }
+}
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
 * {
   margin: 0;
   padding: 0;
@@ -26,6 +51,8 @@ body {
     opacity: 0;
   }
 }
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
 
 li {
   text-decoration: none;

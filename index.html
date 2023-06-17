@@ -15,6 +15,9 @@
 </head>
 
 <body>
+    <div id="preloader">
+
+    </div>
 
     <!-- -- NAV-Bar  -->
 
@@ -816,6 +819,14 @@
     <script src="js/app.js"></script>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+            loader.style.display = 'none'
+        })
+    </script>
 </body>
 
 </html>
