@@ -1,7 +1,7 @@
 
 function sendEmail() {
     Email.send({
-        secureToken: "776f9266-4250-48a9-8476-1915e45f4eaa",
+        secureToken: "7ecada4f-3627-4e0f-8fb5-d3a183eda107",
 
         To: 'praveen.mindnerves@gmail.com',
         From: document.getElementById("email").value,
