@@ -96,6 +96,31 @@ li {
 
 /* ------------------------------------------------------hero page------------------------------------------------------------- */
 
+#video-background {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  #video-background {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  #my-video {
+    position: relative;
+    left: 160px;
+    top: 50px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
 /* --------------------------------------------------------------------------------------------------------------------------------- */
 .heroback {
   background: var(--bs-blue);
